@@ -7,10 +7,10 @@ widget: accomplishments
 headless: true
 
 # Order that this section appears on the page.
-weight: 50
+weight: 60
 
 # Note: `&shy;` is used to add a 'soft' hyphen in a long heading.
-title: 'Accomplish&shy;ments'
+title: 'Certifications'
 subtitle:
 
 # Date format
@@ -23,13 +23,13 @@ date_format: Jan 2006
 #   Leave other parameters empty if not required.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 item:
-- certificate_url: https://www.coursera.org
+- certificate_url: https://www.credly.com/badges/eb692716-86d0-40f9-8a35-0acb44d51717/public_url
   date_end: ""
   date_start: "2021-01-25"
   description: ""
-  organization: Coursera
-  organization_url: https://www.coursera.org
-  title: Neural Networks and Deep Learning
+  organization: AWS
+  organization_url: https://aws.amazon.com/certification/certified-developer-associate/
+  title: AWS Certified Developer - Associate
   url: ""
 - certificate_url: https://www.edx.org
   date_end: ""
@@ -49,5 +49,5 @@ item:
   url: ""
 
 design:
-  columns: '2' 
+  columns: '2'
 ---
