@@ -31,21 +31,21 @@ item:
   organization_url: https://aws.amazon.com/certification/certified-developer-associate/
   title: AWS Certified Developer - Associate
   url: ""
-- certificate_url: https://www.edx.org
+- certificate_url: https://www.credly.com/badges/2d8b24c0-ece3-4c88-97c2-bfebf2979305/public_url
   date_end: ""
-  date_start: "2021-01-01"
-  description: Formulated informed blockchain models, hypotheses, and use cases.
-  organization: edX
-  organization_url: https://www.edx.org
-  title: Blockchain Fundamentals
-  url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
-- certificate_url: https://www.datacamp.com
-  date_end: "2020-12-21"
-  date_start: "2020-07-01"
+  date_start: "2021-01-06"
+  description:
+  organization: Scaled Agile
+  organization_url: https://www.scaledagile.com/
+  title: Certified SAFe® 5 Practitioner
+  url: https://www.scaledagile.com/
+- certificate_url:
+  date_end:
+  date_start: "2018-07-01"
   description: ""
-  organization: DataCamp
-  organization_url: https://www.datacamp.com
-  title: 'Object-Oriented Programming in R'
+  organization: Guidewire
+  organization_url: https://www.guidewire.com/
+  title: 'Guidewire Certified Trainer in Insurance Suite 9.x'
   url: ""
 
 design:
