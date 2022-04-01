@@ -27,8 +27,10 @@ content:
   filter_button:
   - name: All
     tag: '*'
-  - name: Deep Learning
-    tag: Deep Learning
+  - name: Spring Boot
+    tag: Spring Boot
+  - name: AWS
+    tag: AWS
   - name: Other
     tag: Demo
 
