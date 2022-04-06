@@ -1,5 +1,6 @@
 {{ $ := .root }}
 {{ $page := .page }}
+{{ $columns := $page.Params.design.columns | default "3" }}
 
 <div class="row featurette">
   {{ with $page.Title }}
@@ -21,21 +22,21 @@
   {{ if in (slice "fab" "fas" "far" "fal") $pack }}
     {{ $pack_prefix = "fa" }}
   {{ end }}
-  {{ with .url }}<a href="{{ . }}" rel="noopener">{{ end }}
-  <div class="col-12 col-sm-4">
+  {{ $link := .icon_link }}
+  <div class="col-12 {{ if eq $columns "2" }}col-sm-6{{ else if eq $columns "3" }}col-sm-4{{ else if eq $columns "4" }}col-sm-3{{ end }}">
     {{ with .icon }}
     <div class="featurette-icon">
       {{- if eq $pack "emoji" -}}
-        {{- . | emojify -}}
+        <span>{{- . | markdownify | emojify -}}</span>
       {{- else if eq $pack "custom" -}}
-        {{- $svg_icon := resources.Get (printf "media/icon-pack/%s.svg" .) -}}
-        {{- if $svg_icon -}}<img src="{{ $svg_icon.RelPermalink }}" alt="{{.}}" class="svg-icon svg-baseline">{{- end -}}
+        {{- $svg_icon := resources.Get (printf "media/icons/%s.svg" .) -}}
+        {{- if $svg_icon -}}<span><a href="{{$link}}"><img src="{{ $svg_icon.RelPermalink }}" alt="{{.}}" class="svg-icon svg-baseline" loading="lazy"></a></span>{{- end -}}
+        {{- end -}}
       {{- else -}}
         <i class="{{ $pack }} {{ $pack_prefix }}-{{ . }}"></i>
       {{- end -}}
     </div>
     {{ end }}
-    {{ with .url }}</a>{{ end }}
     <div class="section-subheading">{{ .name | markdownify | emojify }}</div>
     {{ with .description }}<p>{{ . | markdownify | emojify }}</p>{{ end }}
   </div>

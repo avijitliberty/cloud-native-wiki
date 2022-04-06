@@ -9,7 +9,7 @@ headless: true
 # Order that this section appears on the page.
 weight: 10
 
-title:
+title: 📚 CheatSheets
 subtitle:
 
 design:
@@ -17,9 +17,9 @@ design:
   columns: "1"
   background:
     # Name of image in `assets/media/`.
-    image: background.jpg
+    image: background-honeycomb.jpg
     # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
-    image_darken: 0.8
+    image_darken: 0.6
     #  Options are `cover` (default), `contain`, or `actual` size.
     image_size: cover
     # Options include `left`, `center` (default), or `right`.
@@ -36,31 +36,50 @@ advanced:
 # - For available icons, see: https://wowchemy.com/docs/page-builder/#icons
 feature:
 - description:
-  icon: devops
-  icon_pack: custom
-  name: DevOps
+  icon: fab fa-github
+  icon_pack: fab
+  name: GitHub
+  icon_link: /cheatsheets/github/
 - description:
-  icon:
-  icon_pack:
-  name:
+  icon: fab fa-jenkins
+  icon_pack: fab
+  name: Jenkins
+  url: /cheatsheets/jenkins
+- description:
+  icon: "jfrog"
+  icon_pack: "custom"
+  name: "JFrog"
+  url: /post/artifactory
+- description:
+  icon: "spring"
+  icon_pack: "custom"
+  name: "SpringBoot"
+  url: /cheatsheets/springboot
 - description:
   icon: fab fa-docker
   icon_pack: fab
-  name: Containers
+  name: Docker
   url: /cheatsheets/docker
 - description:
-  icon: cicd
-  icon_pack: custom
-  name: CI/CD
+  icon: "kubernetes"
+  icon_pack: "custom"
+  name: "Kubernetes"
+  url: /cheatsheets/kubernetes
 - description:
-  icon:
-  icon_pack:
-  name:
+  icon: "vagrant"
+  icon_pack: "custom"
+  name: "Vagrant"
+  url: /cheatsheets/vagrant
 - description:
-  icon: microservice
-  icon_pack: custom
-  name: Microservice
-  url: /cheatsheets/springboot
+  icon: "virtualbox"
+  icon_pack: "custom"
+  name: "VirtualBox"
+  url: /cheatsheets/virtualbox
+- description:
+  icon: fab fa-aws
+  icon_pack: fab
+  name: AWS
+  url: /cheatsheets/aws
 # Uncomment to use emoji icons.
 #- icon: ":smile:"
 #  icon_pack: "emoji"
