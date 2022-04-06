@@ -1,5 +1,5 @@
 ---
-title: Posts
+title: HowTos
 cms_exclude: true
 
 # View.
@@ -12,6 +12,4 @@ view: 2
 header:
   caption: ""
   image: ""
-
-toc: true
 ---
