@@ -60,6 +60,7 @@ feature:
   icon: microservice
   icon_pack: custom
   name: Microservice
+  url: /cheatsheets/springboot
 # Uncomment to use emoji icons.
 #- icon: ":smile:"
 #  icon_pack: "emoji"
