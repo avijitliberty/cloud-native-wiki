@@ -39,7 +39,7 @@ feature:
   icon: fab fa-github
   icon_pack: fab
   name: GitHub
-  icon_link: /cheatsheets/github/
+  url: /cheatsheets/github/
 - description:
   icon: fab fa-jenkins
   icon_pack: fab
