@@ -9,7 +9,9 @@ tags:
 weight: 20
 ---
 
-Coming soon! :busstop:
+{{% callout soon %}}
+Coming soon...
+{{% /callout %}}
 
 
 ### Futher Read

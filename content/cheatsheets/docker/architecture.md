@@ -9,7 +9,7 @@ tags:
 weight: 10
 ---
 
-What is Docker - Big Picture
+What is Docker - Big 📸
 
 <!--more-->
 ### Overview
