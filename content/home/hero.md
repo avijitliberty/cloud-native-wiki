@@ -2,6 +2,7 @@
 widget: hero
 headless: true
 weight: 1
+active: false
 title: Cloud-Native
 cta:
   label: '**Explore**'

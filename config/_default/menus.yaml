@@ -43,7 +43,7 @@ main:
   - name: 📐Projects
     url: '#projects'
     weight: 30
-  - name: ✍️ HowTo
+  - name: 🤝 HowTo
     url: '#posts'
     weight: 40
   - name: 👦 About

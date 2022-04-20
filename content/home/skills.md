@@ -17,9 +17,9 @@ design:
   columns: "1"
   background:
     # Name of image in `assets/media/`.
-    image: background-honeycomb.png
+    image: open-book.jpg
     # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
-    image_darken: 0.6
+    image_darken: 0
     #  Options are `cover` (default), `contain`, or `actual` size.
     image_size: cover
     # Options include `left`, `center` (default), or `right`.
@@ -27,7 +27,7 @@ design:
     # Use a fun parallax-like fixed background effect on desktop? true/false
     image_parallax: true
     # Text color (true=light, false=dark, or remove for the dynamic theme color).
-    text_color_light: true
+    text_color_light:
 advanced:
   css_class: fullscreen
 
@@ -71,10 +71,10 @@ feature:
   name: "Vagrant"
   url: /cheatsheets/vagrant
 - description:
-  icon: "virtualbox"
+  icon: "splunk"
   icon_pack: "custom"
-  name: "VirtualBox"
-  url: /cheatsheets/virtualbox
+  name: "Splunk"
+  url: /cheatsheets/splunk
 - description:
   icon: fab fa-aws
   icon_pack: fab
