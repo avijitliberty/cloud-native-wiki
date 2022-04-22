@@ -1,6 +1,6 @@
 ---
 title: How to Setup Kubernetes Cluster on Vagrant VMs
-subtitle: How to Setup Kubernetes Cluster on Vagrant VMs
+subtitle: Building a Kubernetes 1.23 Cluster
 
 # Summary for listings and search engines
 summary: Building a Kubernetes 1.23 Cluster
@@ -14,7 +14,7 @@ date: "2022-02-01T00:00:00Z"
 toc: true
 
 # Date updated
-lastmod: "2022-02-01T00:00:00Z"
+lastmod: "2022-04-21T00:00:00Z"
 
 # Is this an unpublished draft?
 draft: false
