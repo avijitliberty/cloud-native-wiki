@@ -15,13 +15,13 @@ design:
 
 content:
   slides:
-    - title: 👋 Welcome to cloud-native.wiki
+    - title: 👋 Welcome to cloud&shy;-native
       content: Take a look at what we're working on...
       align: center
       background:
         position: center
         color: '#666'
-        brightness: 0.7
+        brightness: 0.5
         media: wiki-temp.jpeg
     - title: CheatSheets 📚
       content: 'These Cheatsheets are for the little things you never remember :bell:'
@@ -29,7 +29,7 @@ content:
       background:
         position: center
         color: '#555'
-        brightness: 0.7
+        brightness: 0.5
         media: background-honeycomb.png
       link:
         icon: compass
