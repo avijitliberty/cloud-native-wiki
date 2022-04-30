@@ -47,12 +47,12 @@ feature:
   name: Jenkins
   url: /cheatsheets/jenkins
 - description:
-  icon: "jfrog-white"
+  icon: "jfrog"
   icon_pack: "custom"
   name: "JFrog"
   url: /post/artifactory
 - description:
-  icon: "spring-white"
+  icon: "spring"
   icon_pack: "custom"
   name: "SpringBoot"
   url: /cheatsheets/springboot
@@ -62,17 +62,17 @@ feature:
   name: Docker
   url: /cheatsheets/docker
 - description:
-  icon: "kubernetes-white"
+  icon: "kubernetes"
   icon_pack: "custom"
   name: "Kubernetes"
   url: /cheatsheets/kubernetes
 - description:
-  icon: "vagrant-white"
+  icon: "vagrant"
   icon_pack: "custom"
   name: "Vagrant"
   url: /cheatsheets/vagrant
 - description:
-  icon: "splunk-white"
+  icon: "splunk"
   icon_pack: "custom"
   name: "Splunk"
   url: /cheatsheets/splunk

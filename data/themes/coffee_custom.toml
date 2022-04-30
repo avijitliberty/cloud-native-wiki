@@ -3,13 +3,13 @@ name = "Coffee"
 
 [light]
   # Primary
-  primary = "#795548"
+  primary = "#5C4033"
 
   # Menu
   menu_primary = "#fff"
-  menu_text = "#795548 "
+  menu_text = "#5C4033 "
   menu_text_active = "#db8b43"
-  menu_title = "#795548"
+  menu_title = "#5C4033"
 
   # Backgrounds
   background = "#fff"

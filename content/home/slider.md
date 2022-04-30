@@ -15,12 +15,12 @@ design:
 
 content:
   slides:
-    - title: 👋 Welcome to **cloud-native**
+    - title: 👋Welcome <br> to <br> **cloud-native**
       content: Take a look at what we're working on...
       align: center
       background:
         position: center
-        color: '#9fa8da'
+        color: '#5C4033'
         brightness: 0.8
         media: wiki.jpeg
     - title: CheatSheets 📚
@@ -28,7 +28,7 @@ content:
       align: left
       background:
         position: center
-        color: '#9fa8da'
+        color: '#5C4033'
         brightness: 0.8
         media: theory.jpeg
       link:
@@ -41,7 +41,7 @@ content:
       align: left
       background:
         position: center
-        color: '#9fa8da'
+        color: '#5C4033'
         brightness: 0.8
         media: diy.jpeg
       link:
@@ -54,7 +54,7 @@ content:
       align: left
       background:
         position: center
-        color: '#9fa8da'
+        color: '#5C4033'
         brightness: 0.8
         media: tutorial.jpeg
       link:
@@ -67,7 +67,7 @@ content:
       align: left
       background:
         position: center
-        color: '#9fa8da'
+        color: '#5C4033'
         brightness: 0.8
         media: feedback.jpeg
       link:
