@@ -39,29 +39,29 @@ design:
   columns: '2'
   background:
     # Background color.
-    # color: "navy"
+    # color: '#9fa8da'
     # Background gradient.
-    # gradient_start: "DeepSkyBlue"
-    # gradient_end: "SkyBlue"
+    #gradient_start: "DeepSkyBlue"
+    #gradient_end: "SkyBlue"
     # Name of image in `assets/media/`.
-    #image: background.jpg
+    image: open-book.jpg
     # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
-    # image_darken: 0.6
+    image_darken: 1
     #  Options are `cover` (default), `contain`, or `actual` size.
-    # image_size: contain
+    image_size: cover
     # Options include `left`, `center` (default), or `right`.
-    # image_position: left
+    image_position: right
     # Use a fun parallax-like fixed background effect on desktop? true/false
-    # image_parallax: true
+    image_parallax: true
     # Text color (true=light, false=dark, or remove for the dynamic theme color).
-    # text_color_light: true
+    text_color_light: false
 
   # Toggle between the various page layout types.
   #   1 = List
   #   2 = Compact
   #   3 = Card
   #   5 = Showcase
-  view: 2
+  view: Showcase
 
   # For Showcase view, flip alternate rows?
   flip_alt_rows: false

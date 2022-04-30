@@ -16,10 +16,11 @@ design:
   # Choose how many columns the section has. Valid values: 1 or 2.
   columns: "1"
   background:
+    # color: '#9fa8da'
     # Name of image in `assets/media/`.
     image: open-book.jpg
     # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
-    image_darken: 0
+    image_darken: 1
     #  Options are `cover` (default), `contain`, or `actual` size.
     image_size: cover
     # Options include `left`, `center` (default), or `right`.
@@ -27,7 +28,7 @@ design:
     # Use a fun parallax-like fixed background effect on desktop? true/false
     image_parallax: true
     # Text color (true=light, false=dark, or remove for the dynamic theme color).
-    text_color_light:
+    text_color_light: false
 advanced:
   css_class: fullscreen
 
@@ -46,12 +47,12 @@ feature:
   name: Jenkins
   url: /cheatsheets/jenkins
 - description:
-  icon: "jfrog"
+  icon: "jfrog-white"
   icon_pack: "custom"
   name: "JFrog"
   url: /post/artifactory
 - description:
-  icon: "spring"
+  icon: "spring-white"
   icon_pack: "custom"
   name: "SpringBoot"
   url: /cheatsheets/springboot
@@ -61,17 +62,17 @@ feature:
   name: Docker
   url: /cheatsheets/docker
 - description:
-  icon: "kubernetes"
+  icon: "kubernetes-white"
   icon_pack: "custom"
   name: "Kubernetes"
   url: /cheatsheets/kubernetes
 - description:
-  icon: "vagrant"
+  icon: "vagrant-white"
   icon_pack: "custom"
   name: "Vagrant"
   url: /cheatsheets/vagrant
 - description:
-  icon: "splunk"
+  icon: "splunk-white"
   icon_pack: "custom"
   name: "Splunk"
   url: /cheatsheets/splunk

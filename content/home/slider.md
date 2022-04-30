@@ -15,35 +15,35 @@ design:
 
 content:
   slides:
-    - title: 👋 Welcome to cloud&shy;-native
+    - title: 👋 Welcome to **cloud&shy;-native**
       content: Take a look at what we're working on...
       align: center
       background:
         position: center
-        color: '#666'
-        brightness: 0.5
-        media: wiki-temp.jpeg
+        color: '#9fa8da'
+        brightness: 0.8
+        media: wiki.jpeg
     - title: CheatSheets 📚
       content: 'These Cheatsheets are for the little things you never remember :bell:'
       align: left
       background:
         position: center
-        color: '#555'
-        brightness: 0.5
-        media: background-honeycomb.png
+        color: '#9fa8da'
+        brightness: 0.8
+        media: theory.jpeg
       link:
         icon: compass
         icon_pack: fas
         text: Explore
         url: "#skills"
-    - title: Latest Project 📐
+    - title: Latest Projects 📐
       content: 'Let&shy;s build in the :cloud:'
       align: left
       background:
         position: center
-        color: '#333'
-        brightness: 0.5
-        media: project.jpg
+        color: '#9fa8da'
+        brightness: 0.8
+        media: diy.jpeg
       link:
         icon: compass
         icon_pack: fas
@@ -54,9 +54,9 @@ content:
       align: left
       background:
         position: center
-        color: '#333'
-        brightness: 0.5
-        media: tutorials-header.jpg
+        color: '#9fa8da'
+        brightness: 0.8
+        media: tutorial.jpeg
       link:
         icon: compass
         icon_pack: fas
@@ -67,11 +67,11 @@ content:
       align: left
       background:
         position: center
-        color: '#333'
-        brightness: 0.5
-        media: collaborate.jpg
+        color: '#9fa8da'
+        brightness: 0.8
+        media: feedback.jpeg
       link:
-        icon: graduation-cap
+        icon: fas fa-handshake
         icon_pack: fas
         text: Join Us
         url: "#contact"    
