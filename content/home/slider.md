@@ -15,7 +15,7 @@ design:
 
 content:
   slides:
-    - title: 👋 Welcome to **cloud&shy;-native**
+    - title: 👋 Welcome to **cloud-native**
       content: Take a look at what we're working on...
       align: center
       background:
