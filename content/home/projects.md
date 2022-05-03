@@ -31,6 +31,8 @@ content:
     tag: Spring Boot
   - name: AWS
     tag: AWS
+  - name: Kubernetes
+    tag: Kubernetes
   - name: Other
     tag: Demo
 

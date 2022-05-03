@@ -40,6 +40,10 @@ main:
     url: '/cheatsheets/kubernetes/'
     parent: cheatsheets
     weight: 110
+  - name: Splunk
+    url: '/cheatsheets/splunk/'
+    parent: cheatsheets
+    weight: 120
   - name: 📐Projects
     url: '#projects'
     weight: 30
