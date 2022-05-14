@@ -19,8 +19,12 @@ What is Kubernetes - Big picture
 
 Unless you have been hiding behind a 🗿 for the last few years "Breaking down the monolith" has been a theme across Software industry.  More than often application architectures evolved like below and Kubernetes has been heart and center of this evolution.
 
-<img align="left" width="350" height="350" src="/images/uploads/monolith.PNG">
-<img align="right" width="400" height="400" src="/images/uploads/k8s-microservices.png">  
+<img align="center" width="400" height="400" src="/images/uploads/monolith.PNG">
+
+<center>To</center>
+
+<img align="center" width="400" height="400" src="/images/uploads/k8s-microservices.png">  
+
 
 **What is Kubernetes?**
 
@@ -28,7 +32,6 @@ Kubernetes is a portable, extensible, open-source platform for managing containe
 > As per Kubernetes.io
 
 ### Architecture
-
 
 When you deploy Kubernetes, you get a **cluster**.
 A Kubernetes cluster consists of a set of worker machines, called **nodes**, that run containerized applications. Every cluster has at least one worker node. The worker node(s) host the Pods that are the components of the application workload. The **control plane** manages the worker nodes and the Pods in the cluster.
