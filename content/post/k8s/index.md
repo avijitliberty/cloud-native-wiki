@@ -246,7 +246,8 @@ kubectl get nodes
 sudo apt-mark hold kubelet kubeadm kubectl
 ```
 
-Congratulations 😓 — you've a functioning ☸️ cluster.
+Congratulations :clap: — you've a functioning ☸️ cluster. I would be honest this was a lot of work :sweat:.
+Before we move on let's automate this next!
 
 ### Automated Installation
 
