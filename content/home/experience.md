@@ -23,7 +23,7 @@ date_format: Jan 2006
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
 
-  - title: Principal Developer
+  - title: Principal Software Engineer
     company: Liberty Mutual
     company_url: 'https://www.libertymutual.com/'
     company_logo: liberty-mutual
