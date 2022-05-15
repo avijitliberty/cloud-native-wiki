@@ -102,3 +102,19 @@ Watches API Server for new work tasks
 
 - Networking component
 - Pod IP addresses
+
+### Concepts
+
+#### Declarative Model and Desired State
+
+Describe what **you want (desired state)** in a manifest file
+<img align="center" width="400" height="400" src="/images/uploads/k8s-declarative-desired-state.png">
+
+
+#### Atomic units of scheduling - Pod
+
+#### Stable Networking with Services
+
+#### Deployments
+
+#### K8s API and API Server
