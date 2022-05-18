@@ -47,6 +47,10 @@ content:
       icon_pack: fab
       name: DM Me
       link: 'https://twitter.com/avijit_tweeter'
+    - icon: "discord"
+      icon_pack: "fab"
+      name: "Join the Discord server"
+      link: "https://discord.gg/5kf8dzqQFv" 
 
 design:
   # Choose how many columns the section has. Valid values: '1' or '2'.

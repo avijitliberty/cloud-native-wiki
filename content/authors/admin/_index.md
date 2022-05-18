@@ -11,15 +11,34 @@ social:
   - icon: envelope
     icon_pack: fas
     link: /#contact
+    display:
+      header: true
+      footer: true
   - icon: twitter
     icon_pack: fab
     link: https://twitter.com/avijit_tweeter
+    display:
+      header: true
+      footer: true
   - icon: github
     icon_pack: fab
     link: https://github.com/avijitliberty
+    display:
+      header: true
+      footer: true
   - icon: linkedin
     icon_pack: fab
     link: https://www.linkedin.com/in/avijitchatterjee/
+    display:
+      header: true
+      footer: true
+  - icon: discord
+    icon_pack: fab
+    link: https://discord.gg/5kf8dzqQFv
+    label: Join the Discord server
+    display:
+      header: true
+      footer: true
 education:
   courses:
     - course: Electronics and Instrumentation Engineering

@@ -71,8 +71,8 @@ content:
         brightness: 0.8
         media: feedback.jpeg
       link:
-        icon: fas fa-handshake
-        icon_pack: fas
-        text: Join Us
-        url: "#contact"    
+        icon: discord
+        icon_pack: fab
+        text: Discord
+        url: "https://discord.gg/5kf8dzqQFv"    
 ---
