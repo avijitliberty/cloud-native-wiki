@@ -31,6 +31,8 @@ Unless you have been hiding behind a 🗿 for the last few years "Breaking down 
 Kubernetes is a portable, extensible, open-source platform for managing containerized workloads and services, that facilitates both declarative configuration and automation.
 > As per Kubernetes.io
 
+---
+
 ### Architecture
 
 When you deploy Kubernetes, you get a **cluster**.
@@ -39,6 +41,8 @@ A Kubernetes cluster consists of a set of worker machines, called **nodes**, tha
 ![k8s-cluster](/images/uploads/k8s-cluster.png)
 
 Next we will look under the hood at a high level.
+
+---
 
 #### Control Plane
 
@@ -77,6 +81,8 @@ Watches API Server for new work tasks
 - Taints
 - Resources…
 
+---
+
 #### Nodes
 
 <img align="right" width="400" height="400" src="/images/uploads/k8s-node.png">
@@ -103,15 +109,41 @@ Watches API Server for new work tasks
 - Networking component
 - Pod IP addresses
 
+---
+
 ### Concepts
 
 #### Declarative Model and Desired State
 
-Describe what **you want (desired state)** in a manifest file
+Describe what you want **(Desired state)** in a manifest file.
+It's **Declarative** since it does not specify the **HowTo** part, leaving that for Kubernetes to figure out.
 <img align="center" width="400" height="400" src="/images/uploads/k8s-declarative-desired-state.png">
 
+Internally within the Control Plane the following events would occur to get and maintain the **Desired** state.
+![k8s-operation](/images/uploads/k8s-operation.png)
 
-#### Atomic units of scheduling - Pod
+* **Client/Kubectl** calls **ApiServer{}** with your **Desired** state,
+* **ApiServer{}** persists that in the **K-V** store,
+* **Scheduler** schedules work to the Worker nodes to create **Desired** state,
+* **Controller** would run **Watch/Reconciliation** loops to maintain **Desired** state.
+
+---
+
+#### Atomic unit
+
+The Atomic unit of scheduling/scaling in the Kubernetes world is the **Pod**. Meaning you cannot run your containerized workload directly, it needs to be wrapped in a **Pod**.
+
+So what does a **Pod** give?
+
+* It gives a **Shared Execution Environment** for the Containers.
+  <img align="center" width="400" height="500" src="/images/uploads/k8s-pods.png">
+
+* Unless you have a Specialist Use Case where a <hlpr> container enhances the <app> container functionality, it's best practice to keep the containers loosely coupled, i.e in all typical application use cases you would connect them via  Networking.
+  ![k8s-coupling](/images/uploads/k8s-pods-coupling.png)
+
+* Scaling in Kubernetes happens by adding/removing **Pods**, not **Containers**
+  ![k8s-scaling](/images/uploads/k8s-pods-scaling.png)
+
 
 #### Stable Networking with Services
 

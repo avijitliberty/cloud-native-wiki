@@ -69,7 +69,7 @@ content:
         position: center
         color: '#5C4033'
         brightness: 0.8
-        media: feedback.jpeg
+        media: teamwork.jpeg
       link:
         icon: discord
         icon_pack: fab
