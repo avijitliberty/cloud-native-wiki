@@ -10,7 +10,7 @@ tags:
 weight: 10
 ---
 
-What is Kubernetes - Big picture
+What is Kubernetes
 
 <!--more-->
 ### Overview
@@ -135,18 +135,88 @@ The Atomic unit of scheduling/scaling in the Kubernetes world is the **Pod**. Me
 
 So what does a **Pod** give?
 
-* It gives a **Shared Execution Environment** for the Containers.
+* 🥁 It gives a **Shared Execution Environment** for the Containers i.e
+
+  a collection of things the ```<app>``` needs for it to run, things like an IP address, port, filesystem, shared memory and so on.
+
   <img align="center" width="400" height="500" src="/images/uploads/k8s-pods.png">
 
-* Unless you have a Specialist Use Case where a <hlpr> container enhances the <app> container functionality, it's best practice to keep the containers loosely coupled, i.e in all typical application use cases you would connect them via  Networking.
+* Unless you have a Specialist Use Case where a ```<hlpr>``` container enhances the ```<app>``` container functionality, it's best practice to keep the containers loosely coupled, i.e in all typical application use cases you would connect them via  Networking.
   ![k8s-coupling](/images/uploads/k8s-pods-coupling.png)
 
 * Scaling in Kubernetes happens by adding/removing **Pods**, not **Containers**
   ![k8s-scaling](/images/uploads/k8s-pods-scaling.png)
 
+* Pod deployment is **Atomic** operation i.e
+
+  🤔 A pod would only report up and running to the **Control Plane** only when all of it's containers are **UP**. It's a ```all or nothing``` proposition.
+  {{< video library="true" src="k8s-pods-atomic.mp4" >}}
+
+* Containers in a **Pod** are always scheduled the same **Node**.
+  <img align="center" width="400" height="500" src="/images/uploads/k8s-pods-node.png">
+
+* Annotations
+* Labels
+* Policies
+* Resources
+* Co-scheduling containers
+
+---
 
 #### Stable Networking with Services
 
+We learnt earlier that each **Pod** gives a **Shared Execution Environment** which includes an **IP address**.
+But since we can scale ↕️, or they may crash and be replaced, their IP address would keep on changing. Well that means any client application cannot/should not rely on the Pod IP address.
+
+* 🥁 Enter **Service** objects. It is a high‑level stable abstraction point for multiple Pods and it provides a stable IP and DNS name. A **Service** object is just a Kubernetes API object like a **Pod** or **Deployment** or anything else, meaning we define it in a YAML manifest, and we create it by throwing that manifest at the **ApiServer{}**.
+
+* The way that a Pod belongs to a service or makes it onto the list of Pods that a service will forward traffic to and do loadbalancing is via ```labels```. When deciding which Pods to load balance traffic to, the service uses a label selector like below.
+![k8s-services](/images/uploads/k8s-services.png)
+
+{{% callout note %}}
+ > Note: That means a completely unrelated **<app>** pod could potentially get routed to also:
+
+![k8s-services-loadbalancing](/images/uploads/k8s-services-loadbalancing.png)
+{{% /callout %}}
+
+* When it comes to updating the backend Pods, all that needs to happen is update the label selector for the **Service** object like so:
+
+![k8s-services-updates](/images/uploads/k8s-services-updates.png)
+
+* Only sends traffic to healthy Pods
+* Can do session affinity
+* Can send traffic to endpoints outside the cluster
+* Can do TCP and UDP
+
 #### Deployments
 
-#### K8s API and API Server
+Pods don't scale or self heal or any of such dynamic goodness.
+
+* 🥁 Enter **Deployments** (for Stateless apps) or similar high‑level controllers like **Stateful Sets**,**DaemonSets**, **Jobs**, **Cron Jobs** and more and each are for different use cases.
+<img align="center" width="400" height="400" src="/images/uploads/k8s-controllers.png">
+
+* **Deployments** add some of the functionality like self‑healing, scaling, rolling updates, rollbacks, and a bunch more. Deployments work together with another controller called a **ReplicaSet** controller, and it's actually the job of the **ReplicaSet** to manage the number of replicas. Then, the **Deployment** acts as a higher level controller  above or around the replica set and manages them. So, we've got a bunch of nesting going on here:
+<img align="center" width="500" height="500" src="/images/uploads/k8s-deployments.png">
+
+#### K8s API and APIServer{}
+
+So far, we've mentioned nodes, pods, services, replica sets, deployments, services.
+* 🥁 Well, each one of these is an object in the Kubernetes API.
+
+* The API contains the definition and feature set of every object in Kubernetes so that when we post the corresponding manifest to the API server, it knows we're defining say a **Deployment** object in this version of the API, and it knows what all of these fields are and how to build what we need.
+
+* **APIServer{}** is a **Control Plane** feature that exposes the API over a secure, RESTful endpoint. So, it supports all the major HTTP verbs like POST, and GET, and all of that.
+
+* It is also versioned and split into multiple subgroups for ease of access.
+
+![k8s-apiserver](/images/uploads/k8s-apiserver.png)
+
+### Further Read
+
+Here's a mind map of everything we went over which might help to stick things in:
+![k8s-summary](/images/uploads/k8s-summary.png)
+
+Also [Kubernetes.io](https://kubernetes.io/) documentation can be a little dry but is a treasure trove of information. Check these out to begin with:
+* [Kubernetes Components](https://kubernetes.io/docs/concepts/overview/components/)
+* [Workload Resources](https://kubernetes.io/docs/concepts/workloads/controllers/)
+* [Kubernetes API](https://kubernetes.io/docs/concepts/overview/kubernetes-api/)
