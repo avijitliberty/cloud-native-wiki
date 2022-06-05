@@ -2,6 +2,7 @@
 title: Containers
 linktitle: Containers
 type: book
+draft: true
 tags:
   - Kubernetes
 date: "2022-02-03T00:00:00+01:00"

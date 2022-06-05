@@ -5,6 +5,7 @@ type: book
 tags:
   - Kubernetes
 date: "2022-02-03T00:00:00+01:00"
+draft: true
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
 weight: 100
 ---
@@ -13,7 +14,7 @@ Working with Kubernetes Using kubectl
 
 <!--more-->
 
-Introduction
+### Overview
 This hands-on lab will provide you with the opportunity to practice your basic kubectl skills in a real Kubernetes cluster. You will create and manipulate some simple Kubernetes objects using kubectl. This will allow you to exercise your kubectl skills.
 
 Solution
