@@ -119,6 +119,14 @@ Describe what you want **(Desired state)** in a manifest file.
 It's **Declarative** since it does not specify the **HowTo** part, leaving that for Kubernetes to figure out.
 <img align="center" width="400" height="400" src="/images/uploads/k8s-declarative-desired-state.png">
 
+{{% callout note %}}
+Kubernetes does support both **Imperative** i.e (specifying the **HowTo** part) and **Declarative** operations.
+
+But **Declarative** is the preferred method in Production since it can be version controlled and host of other goodness.
+
+The **Imperative** way is absolutely not the approach to use in Production but it’s very handy to go fast, test things up, and it can also help to generate manifest files (using a combination of the --dry-run and -o yaml flags). Also see [Pod Deployment](/cheatsheets/kubernetes/pods/#pod-deployment).
+{{% /callout %}}
+
 Internally within the Control Plane the following events would occur to get and maintain the **Desired** state.
 ![k8s-operation](/images/uploads/k8s-operation.png)
 
