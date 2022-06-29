@@ -120,3 +120,37 @@ $ kubectl logs -l name=web -c web-ctr
 ```
 
 ### Multi-container Pod
+
+Below is an example of a Multi-Container Pod. We can see we've got two containers ```specs```. Also we can see the main container's listening on port 80 and the helper on 9113.
+
+<img align="right" width="250" height="250" src="/images/uploads/k8s-multi-pods.png">
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+spec:
+  containers:
+  - name: main-ctr
+    image: nigelpoulton/nginxadapter:1.0
+    ports:
+    - containerPort: 80
+  - name: helper-ctr
+    image: nginx/nginx-prometheus-exporter
+    args: ["-nginx.scrape-uri","http://localhost/nginx_status"]
+    ports:
+    - containerPort: 9113
+```
+
+You would run it the same way:
+
+```bash
+$ kubectl apply -f multi-pod.yml
+pod/nginx created
+
+$ kubectl get pods --watch
+NAME        READY   STATUS              RESTARTS        AGE
+nginx       0/2     ContainerCreating   0               8s
+nginx       2/2     Running             0               9s
+```
