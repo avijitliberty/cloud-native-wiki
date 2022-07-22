@@ -149,8 +149,12 @@ You would run it the same way:
 $ kubectl apply -f multi-pod.yml
 pod/nginx created
 
+# Watch Pods
 $ kubectl get pods --watch
 NAME        READY   STATUS              RESTARTS        AGE
 nginx       0/2     ContainerCreating   0               8s
 nginx       2/2     Running             0               9s
+
+# Delete pods
+$ kubectl delete -f multi-pod.yml
 ```
